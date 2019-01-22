@@ -1,35 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<style>
-body {
-  background-color: linen;
-}
-
-h1 {
-  color: maroon;
-  margin-left: 40px;
-  font-family: "Lucida Console", Monaco, monospace;
-  text-align: center;
-} 
-</style>
-</head>
-<body>
-	<h1> 
-	<div id="changeText">👋 Wilcommen till l33tjojos zite 👋</div>
-	<img SRC="https://media.giphy.com/media/HQfS5pz6xCANO/giphy.gif">
-	</h1>
-<script>
-var container = document.getElementById('changeText');
-
-var things = ['Håll i dig! Här kommer två fniss!','Två myror och en stack 🐜🐜', 'Fem bagare och en smet 👩🏻‍🍳👨🏻‍🍳👨🏻‍🍳👩🏻‍🍳👨🏻‍🍳', '*fniss* Slut på det roliga 💁‍♀️'];
-var t = -1;
-var thing = '';
-var message = container.innerHTML;
-var mode = 'write';
-var delay = 1000;
-
 function updateText(txt) {
     container.innerHTML = txt;
 }
@@ -80,9 +48,3 @@ function tick() {
 
     timeout = window.setTimeout(tick, delay);
 }
-
-var timeout = window.setTimeout(tick, delay);
-</script>
-
-</body>
-</html>
